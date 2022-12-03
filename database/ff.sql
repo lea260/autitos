@@ -34,10 +34,11 @@ CREATE TABLE `auto` (
   `id` int(11) NOT NULL,
   `precio_compra` float NOT NULL,
   `precio_venta` float NOT NULL,
+  `estado` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `marca` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `modelo` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `fecha_venta` datetime NOT NULL,
-  `año` int(11) NOT NULL
+  `anio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
