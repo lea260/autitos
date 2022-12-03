@@ -1,7 +1,7 @@
 <?php
 
 //define('URL', 'http://localhost/mvc/');
-define('URL', 'http://' . $_SERVER['HTTP_HOST'] . '/app03/Automotora/');
+define('URL', 'http://' . $_SERVER['HTTP_HOST'] . '/app03/auto/');
 
 //conexion a la base de datos
 define('HOST', 'localhost');
