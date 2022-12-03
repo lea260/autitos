@@ -1,6 +1,4 @@
 <?php
-require_once 'vendor/autoload.php';
-require_once 'auth/Auth.php';
 
 class Login_Controller extends Controller
 {
@@ -21,22 +19,10 @@ class Login_Controller extends Controller
 
     public function ingresar()
     {
-        $nombre     = $_POST['nombre'];
-        $pass       = $_POST['pass'];
-        $exitoLogin = $this->model->ingresar($nombre, $pass);
-        if ($exitoLogin) {
 
-            $this->view->token        = $token;
-            $_SESSION["estalogueado"] = true;
-            $_SESSION["nombre"]       = $nombre;
-            $_SESSION["rol"]          = "cliente";
-            $this->view->render('login/ingresar');
-        } else {
-            $this->view->resultadoLogin = "usuario o contraseña incorrectos";
-            $this->view->render('login/index');
-        }
-
+        $this->view->render('login/ingresar');
     }
+
     public function salir()
     {
         //$_SESSION["estalogueado"] = false;
