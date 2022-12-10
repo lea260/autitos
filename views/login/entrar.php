@@ -23,11 +23,7 @@
     </div>
 
 
-    <form action="<?php echo constant('URL'); ?>login/entrar" method="POST">
-      <label for="usuario">usuario</label>
-      <input type="text" name="nombre" id="usuario">
-      <input type="submit" value="enviar">
-    </form>
+
 
   </div>
   <?php require 'views/footer.php';?>
