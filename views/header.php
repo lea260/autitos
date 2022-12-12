@@ -14,4 +14,5 @@ if ($rol == "vendedor") {?>
   <a href="<?php echo constant('URL'); ?>login/mecanico">mecanico</a>
   <?php }
 ;?>
+  <a href="<?php echo constant('URL'); ?>login/salir">salir</a>
 </header>
