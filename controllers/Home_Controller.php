@@ -1,5 +1,6 @@
 <?php
 
+require_once 'models/Auto_Model.php';
 class Home_Controller extends Controller
 {
     public function __construct()
@@ -22,5 +23,14 @@ class Home_Controller extends Controller
         $utc->setTimezone(new DateTimeZone('America/Montevideo'));
         echo $utc->format('Y-m-d H:i:s');
 
+    }
+
+    public function test()
+    {
+        echo "<pre>";
+        $auto  = new Auto_Model();
+        $lista = $auto->enVenta();
+        var_dump($lista);
+        echo "</pre>";
     }
 }
